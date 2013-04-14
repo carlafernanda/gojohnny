@@ -7,7 +7,7 @@ Please see the readme.txt file that goes with this source.
 Licensed under the GPL, please see:
 http://www.gnu.org/licenses/gpl-3.0-standalone.html
 panglossa@yahoo.com.br
-Araçatuba - SP - Brazil - 2013
+Araï¿½atuba - SP - Brazil - 2013
 */
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -100,7 +100,7 @@ if(GJ_SHORTCUTS){
 		//thus we can avoid using the keyword 'new' for object creation
 		/*
 		I know we shouldn't have functions with the same names as classes
-		and I know that avoiding the use of a keyword is wrong
+		and I know that avoiding the use of a keyword is questionable
 		and I know that using eval() is "wrong" (please note the quotation marks)
 		but it works for me and you can disable it anytime if it bothers you:
 		just define GJ_SHORTCUTS as false, or, more simply, don't use this feature.
