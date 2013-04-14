@@ -7,7 +7,7 @@ Please see the readme.txt file that goes with this source.
 Licensed under the GPL, please see:
 http://www.gnu.org/licenses/gpl-3.0-standalone.html
 panglossa@yahoo.com.br
-Araï¿½atuba - SP - Brazil - 2013
+Araçatuba - SP - Brazil - 2013
 */
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
@@ -37,11 +37,13 @@ foreach(array(
 	'GJ_USEMATHML' => false,
 	'GJ_SHORTCUTS' => true,
 	'GJ_OPENGRAPH_METATAGS' => false,
-	'GJ_DEFAULTICON' => '/_gojohnny7/media/gj_32.ico',
+	'GJ_DEFAULTICON' => "{$gjwebpath}/media/gj_32.ico",
 	'GJ_DEFAULTFORMMETHOD' => 'POST',
 	'GJ_DEFAULTFORMAUTOCOMPLETE' => 'on',
 	'GJ_DEFAULTFORMENCTYPE' => 'multipart/form-data',
 	'GJ_DEFAULTINPUTTYPE' => 'text',
+	'GJ_USEGJCSS' => true,
+	'GJ_USEGJJS' => true,
 	/* 
 	3rd party libraries
 	*/
@@ -49,8 +51,6 @@ foreach(array(
 	'GJ_JQUERY' => "{$gjwebpath}/lib/jquery/jquery.js",
 	'GJ_JQUERYUI_CSS' => "{$serverpath}/jqueryui/css/ui-lightness/jquery-ui-1.8.17.custom.css",
 	'GJ_JQUERYUI_JS' => "{$serverpath}/jqueryui/js/jqueryui.js",
-	'GJ_USEGJCSS' => true,
-	'GJ_USEGJJS' => true,
 	'GJ_MARKDOWN' => dirname(__FILE__) . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'markdown' . DIRECTORY_SEPARATOR . 'markdown.php'
 	) as $name => $val){
 	if(!defined($name)){
@@ -100,7 +100,7 @@ if(GJ_SHORTCUTS){
 		//thus we can avoid using the keyword 'new' for object creation
 		/*
 		I know we shouldn't have functions with the same names as classes
-		and I know that avoiding the use of a keyword is questionable
+		and I know that avoiding the use of a keyword is wrong
 		and I know that using eval() is "wrong" (please note the quotation marks)
 		but it works for me and you can disable it anytime if it bothers you:
 		just define GJ_SHORTCUTS as false, or, more simply, don't use this feature.

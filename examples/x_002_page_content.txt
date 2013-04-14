@@ -1,0 +1,10 @@
+Page Content
+============
+
+The content of this page is located in a separate txt file, written with MarkDown syntax.
+
+We use the Markdown & Extra engine Copyright (c) 2004-2009 Michel Fortin  <http://michelf.com/projects/php-markdown/>, based on the original Markdown Copyright (c) 2004-2006 John Gruber <http://daringfireball.net/projects/markdown/>.
+
+----
+
+You add the resulting HTML5 to a <tt>TPage</tt> object with a simple call to the <tt>load()</tt> method. The class then uses markdown to interpret the file content.
