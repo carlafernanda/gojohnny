@@ -11,7 +11,7 @@ Araçatuba - SP - Brazil - 2013
 */
 
 
-class TPage extends TElement {
+class THtml extends TElement {
 	var $doctype = '<!DOCTYPE html>';
 	var $type = 'html';//just a standard library property
 	var $head;//a TPageHead object representing the <head> section of the page
@@ -232,5 +232,8 @@ class TPage extends TElement {
 		}
 	////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////
+	}
+class TPage extends THtml {
+	var $type = 'html';
 	}
 ?>
