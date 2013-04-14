@@ -1,0 +1,103 @@
+body {
+	font-family:Delicious;
+	font-size:14pt;
+	background-color:black;
+	color:rgb(210,210,210);
+	text-align:center;
+	}
+
+#main{
+	border-width:1px;
+	border-color:silver;
+	border-style:solid;
+	border-radius:.25em;
+	left:10%;
+	width:80%;
+	top:1em;
+	position:absolute;
+	background-color:rgb(75,75,75);
+  	box-shadow: 0px 4px 13px 3px rgb(95,95,95);
+  	padding-top:.5em;
+  	padding-bottom:.75em;
+  	text-align:left;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	background-color:rgb(225,135,40);
+	color:rgb(220,220,220);
+	text-shadow: 4px 3px 3px #000;
+	font-variant:small-caps;
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	border-radius:5px;
+	padding-left:.25em;
+	padding-bottom:.1em;
+	}
+
+h1 {
+	font-size:200%;
+	}
+
+h2 {
+	font-size:175%;
+	}
+
+h3 {
+	font-size:150%;
+	}
+
+h4 {
+	font-size:135%;
+	}
+
+h5 {
+	font-size:120%;
+	}
+
+h6 {
+	font-size:110%;
+	}
+
+p{
+	text-indent:1em;
+	}
+
+.imglink {
+	text-decoration:none;
+	margin:0px;
+	padding:0px;
+	}
+
+.right-align{
+	text-align:right;
+	}
+
+.center-align{
+	text-align:center;
+	}
+
+.left-align{
+	text-align:left;
+	}
+
+legend {
+	color:silver;
+	text-align:center;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
