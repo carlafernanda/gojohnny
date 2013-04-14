@@ -7,7 +7,7 @@ Please see the readme.txt file that goes with this source.
 Licensed under the GPL, please see:
 http://www.gnu.org/licenses/gpl-3.0-standalone.html
 panglossa@yahoo.com.br
-Araçatuba - SP - Brazil - 2013
+Araï¿½atuba - SP - Brazil - 2013
 */
 header("Content-type: text/css");
 require_once('gjmain.php');
@@ -17,6 +17,7 @@ if (isset($_REQUEST['path'])){
 	}else{
 	$path = GJ_PATH_WEB;
 	}
+//This is to be replaced by a more comprehensive solution, to deal with all types of fonts
 $ttfinfoclasspath = GJ_PATH_LOCAL . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'ttfinfoplus' . DIRECTORY_SEPARATOR . 'ttfInfo.class.php';
 if(file_exists($ttfinfoclasspath)){
 	$css = '';
