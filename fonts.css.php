@@ -7,7 +7,7 @@ Please see the readme.txt file that goes with this source.
 Licensed under the GPL, please see:
 http://www.gnu.org/licenses/gpl-3.0-standalone.html
 panglossa@yahoo.com.br
-Araçatuba - SP - Brazil - 2013
+AraÃ§atuba - SP - Brazil - 2013
 */
 header("Content-type: text/css");
 require_once('gjmain.php');
@@ -15,8 +15,9 @@ error_reporting(E_ERROR);
 if (isset($_REQUEST['path'])){
 	$path = $_REQUEST['path'];
 	}else{
-	$path = GJ_PATH_WEB;
+	$path = GJ_PATH_WEB . '/fonts';
 	}
+/*
 $ttfinfoclasspath = GJ_PATH_LOCAL . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'ttfinfoplus' . DIRECTORY_SEPARATOR . 'ttfInfo.class.php';
 if(file_exists($ttfinfoclasspath)){
 	$css = '';
@@ -46,65 +47,67 @@ if(file_exists($ttfinfoclasspath)){
 				$name = $name[count($name)-1];
 				}
 			}
-		$css .= "@font-face {\n	font-family: {$name}\n	src: url({$key}){$format};\n	}\n\n";
+		$fname = $path . '/' . basename($key);
+		$css .= "@font-face {\n	font-family: {$name}\n	src: url({$fname}){$format};\n	}\n\n";
 		}
 	}else{
-	$css = "@font-face {
+*/	
+$css = "@font-face {
 	font-family: Graublau Sans Web;
-	src: url({$path}/fonts/GraublauWeb.otf) format('opentype');
+	src: url({$path}/GraublauWeb.otf) format('opentype');
 	}
 
 @font-face {
 	font-family: 'Diavlo';
 	font-style: normal;
 	font-weight: normal;
-	src: local('Diavlo'), url('{$path}/fonts/Diavlo_MEDIUM_II_37.otf') format('opentype');
+	src: local('Diavlo'), url('{$path}/Diavlo_MEDIUM_II_37.otf') format('opentype');
 	}
 
 @font-face {
 	font-family: Vollkorn;
-	src: url({$path}/fonts/Vollkorn-Regular.ttf);
+	src: url({$path}/Vollkorn-Regular.ttf);
 	}
 
 @font-face {
 	font-family: Delicious;
-	src: url({$path}/fonts/Delicious-Roman.otf) format('opentype');
+	src: url({$path}/Delicious-Roman.otf) format('opentype');
 	}
 
 @font-face {
 	font-family: Fontin Sans;
-	src: url({$path}/fonts/Fontin_Sans_R_45b.otf) format('opentype');
+	src: url({$path}/Fontin_Sans_R_45b.otf) format('opentype');
 	}
 
 @font-face {
 	font-family: Fontin;
-	src: url({$path}/fonts/Fontin-Regular.otf) format('opentype');
+	src: url({$path}/Fontin-Regular.otf) format('opentype');
 	}
 
 @font-face {
 	font-family: Tallys;
-	src: url({$path}/fonts/Tallys_15.otf) format('opentype');
+	src: url({$path}/Tallys_15.otf) format('opentype');
 	}
 
 @font-face {
 	font-family: Tlaymyts;
-	src: url({$path}/fonts/tlaymyts.ttf);
+	src: url({$path}/tlaymyts.ttf);
 	}
 
 @font-face {
 	font-family: Papyrus;
-	src: url({$path}/fonts/PAPYRUS.TTF);
+	src: url({$path}/PAPYRUS.TTF);
 	}
 
 @font-face {
 	font-family: Doulos;
-	src: url({$path}/fonts/DoulosSILR.ttf);
+	src: url({$path}/DoulosSILR.ttf);
 	}
 
 @font-face {
 	font-family: Book Antiqua;
-	src: url({$path}/fonts/BookAntiqua.ttf);
+	src: url({$path}/BookAntiqua.ttf);
 	}
 ";
-	}
+//	}
 echo $css;
